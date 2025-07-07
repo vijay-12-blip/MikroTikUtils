@@ -55,3 +55,19 @@
 
 # Send Message to Telegram
 /tool fetch "https://api.telegram.org/bot$TToken/sendMessage\?chat_id=$TChatId&text=$msg&parse_mode=markdown" keep-result=no
+
+# Firewall rules
+#:set msg "%0A%0A*Firewall Rules %F0%9F%94%A5*"
+#:local examplefwrule [/ip firewall get [find comment="Comment of the rule"] disabled]
+#:if ($examplefwrule) do={:set msg "$msg%0AFW Rule: _OFF_"} else={:set msg "$msg%0AFW Rule: _ON_"}
+
+# Firewall NAT rules
+#:set msg "%0A%0A*NAT Firewall Rules %F0%9F%94%A5*"
+#:local port80rule [/ip firewall nat get [find comment="Comment of the nat rule"] disabled]
+#:if ($port80rule) do={:set msg "$msg%0APort 80: _OFF_"} else={:set msg "$msg%0APort 80: _ON_"}
+
+# Queues
+#:local msg "%0A%0A*Band Limits Queues %F0%9F%93%89*"
+#:local qnet1 [/queue simple get [find comment="Comment of queue"] disabled]
+#:if ($qnet1) do={ :set msg "$msg%0ABand Limit test: _OFF_" } else={ :set msg "$msg%0ABand Limit test: _ON_" }
+
