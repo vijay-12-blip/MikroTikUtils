@@ -22,9 +22,9 @@
 
 1. **Clone or Download** this repository:
     ```sh
-    git clone https://github.com/yourusername/MikroTikUtils.git
+    git clone https://github.com/CtrlAltJon/MikroTikUtils.git
     ```
-    Or download the scripts directly from the [GitHub repo](https://github.com/yourusername/MikroTikUtils).
+    Or download the scripts directly from the [GitHub repo](https://github.com/CtrlAltJon/MikroTikUtils).
 
 2. **Upload Scripts**  
    Use Winbox, WebFig, or FTP to upload the desired `.rsc` script(s) to your MikroTik device.
