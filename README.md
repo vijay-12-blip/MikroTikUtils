@@ -60,7 +60,7 @@ To use the IP change notification script:
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!  
-Feel free to [open an issue](https://github.com/yourusername/MikroTikUtils/issues) or submit a pull request.
+Feel free to [open an issue](https://github.com/CtrlAltJon/MikroTikUtils/issues) or submit a pull request.
 
 
 ## License
